@@ -1,0 +1,45 @@
+#welcome-container {
+  display: grid;
+  grid-template-rows: 60% 30% 10%;
+  /* flex-direction: column; */
+  height: 100vh;
+  justify-items: center;
+  background-color: #0076ff;
+}
+
+#welcome-title {
+  font-family: 'Baskervville', serif;
+  font-size: 10em;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 10%;
+}
+
+.info {
+  font-family: 'Courier Prime', monospace;
+  color: #ffffff;
+  font-size: 1em;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#indicator {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -30px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
