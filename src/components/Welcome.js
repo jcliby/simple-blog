@@ -13,7 +13,11 @@ const Welcome = () => {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <img src={Indicator} id="indicator" />
+      <img
+        src={Indicator}
+        id="indicator"
+        alt="An upside down triangle indicating to scroll down the page."
+      />
     </div>
   );
 };
