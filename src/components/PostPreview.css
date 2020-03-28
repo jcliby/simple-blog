@@ -1,0 +1,27 @@
+.post-preview {
+  display: grid;
+}
+
+.preview-title {
+  font-family: 'Baskervville', serif;
+  font-size: 4.5em;
+  font-weight: normal;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+.preview-content {
+  font-family: 'Baskervville', serif;
+  font-size: 1.5em;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.preview-link {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  justify-self: end;
+  color: #0076ff;
+  font-size: 1em;
+  margin-top: 1%;
+}
