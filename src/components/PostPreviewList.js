@@ -5,11 +5,15 @@ import PostPreview from './PostPreview';
 
 const PostPreviewList = ({ posts }) => {
   return (
-    <div id="list-container">
-      <h1 id="list-title">Recent Posts</h1>
-      {posts.map((post, index) => {
+    <div id="list-container" className="container">
+      <h1 className="section-title">Recent Posts</h1>
+      {posts.map(post => {
         return (
-          <PostPreview id={index} title={post.title} content={post.content} />
+          <PostPreview
+            key={post.id}
+            title={post.title}
+            content={post.content}
+          />
         );
       })}
     </div>

@@ -1,0 +1,32 @@
+#footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5a5a5a;
+  padding-top: 5%;
+  padding-bottom: 4em;
+}
+
+#footer-title {
+  color: #ffffff;
+}
+
+#link-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 0.7em;
+}
+
+.link-box {
+  justify-self: center;
+  padding: 1.5em;
+}
+
+.link-box > a {
+  font-family: 'Baskervville', serif;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom-color: #ffe200;
+  border-bottom-style: solid;
+  border-bottom-width: 15px;
+}

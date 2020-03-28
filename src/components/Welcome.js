@@ -5,7 +5,7 @@ import Indicator from '../images/indicator.svg';
 
 const Welcome = () => {
   return (
-    <div id="welcome-container">
+    <div id="welcome-container" className="container">
       <h1 id="welcome-title">Blog</h1>
       <p className="info">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

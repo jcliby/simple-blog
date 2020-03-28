@@ -7,7 +7,7 @@ const PostPreview = ({ title, content }) => {
   return (
     <div className="post-preview">
       <h1 className="preview-title">{title}</h1>
-      <p className="preview-content">{renderString(content)}</p>
+      <div className="preview-content">{renderString(content)}</div>
       <p className="preview-link">Link to Post</p>
     </div>
   );
