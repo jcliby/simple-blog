@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from 'react-router-dom';
 
 import Welcome from './components/Welcome';
 import PostPreviewList from './components/PostPreviewList';
@@ -10,20 +16,31 @@ class App extends Component {
     selectedId: ''
   };
 
-  handlePostClick = e => {
-    e.preventDefault();
-    this.setState({ selectedId: e.target.id });
-    console.log(this.state);
+  handlePostClick = id => {
+    this.setState({ selectedId: id });
   };
 
   render() {
+    const { selectedId } = this.state;
+
     return (
-      <div>
-        <Welcome />
-        <PostPreviewList posts={tempData} onClick={this.handlePostClick} />
-        {/* <Post post={tempData[0]} /> */}
-        <Footer />
-      </div>
+      <Router>
+        <div>
+          <Welcome />
+          <Switch>
+            <Route path="/post/:id">
+              <Post post={tempData[selectedId]} />
+            </Route>
+            <Route path="/">
+              <PostPreviewList
+                posts={tempData}
+                onClick={this.handlePostClick}
+              />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

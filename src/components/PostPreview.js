@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
 import './PostPreview.css';
@@ -8,9 +9,13 @@ const PostPreview = ({ id, title, content, onClick }) => {
     <div className="post-preview">
       <h1 className="preview-title">{title}</h1>
       <div className="preview-content">{renderString(content)}</div>
-      <p className="preview-link" id={id} onClick={onClick}>
+      <Link
+        className="preview-link"
+        to={`/post/${id}`}
+        onClick={() => onClick(id)}
+      >
         Link to Post
-      </p>
+      </Link>
     </div>
   );
 };
