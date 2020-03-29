@@ -1,14 +1,30 @@
 #post-container {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 10% 90%;
-  grid-template-areas:
-    'head'
-    'post';
-  justify-items: center;
   background-color: #f7f5ea;
 }
 
-#post-head {
-  background-color: #0076ff;
+.post-title {
+  font-family: 'Baskervville', serif;
+  font-size: 4em;
+  font-weight: normal;
+  margin-bottom: 2%;
+}
+
+.post-date {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.7em;
+}
+
+.post-content {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  line-height: 22px;
+  font-size: 1.1em;
+  padding-bottom: 20%;
+}
+
+#post-image {
+  place-self: center;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
