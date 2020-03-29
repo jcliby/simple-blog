@@ -1,7 +1,6 @@
 #welcome-container {
   display: grid;
-  grid-template-rows: 60% 30% 10%;
-  /* flex-direction: column; */
+  grid-template-rows: 50% 40% 10%;
   height: 100vh;
   justify-items: center;
   background-color: #0076ff;
@@ -9,10 +8,29 @@
 
 #welcome-title {
   font-family: 'Baskervville', serif;
-  font-size: 10em;
+  font-size: 7em;
   font-weight: normal;
   color: #ffffff;
   margin: 10%;
+  padding-top: 10%;
+}
+
+@media (min-width: 375px) {
+  #welcome-container {
+    display: grid;
+    grid-template-rows: 60% 30% 10%;
+    height: 100vh;
+    justify-items: center;
+    background-color: #0076ff;
+  }
+
+  #welcome-title {
+    font-family: 'Baskervville', serif;
+    font-size: 10em;
+    font-weight: normal;
+    color: #ffffff;
+    margin: 10%;
+  }
 }
 
 .info {
