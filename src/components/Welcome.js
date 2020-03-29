@@ -9,16 +9,16 @@ class Welcome extends Component {
   };
 
   componentDidMount() {
-    document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 100;
-      const scroll = Math.round(
-        (window.pageYOffset / window.innerHeight) * 100
-      );
-      if (isTop !== this.state.isTop && scroll > 82) {
-        console.log('here');
-        this.setState({ isTop });
-      }
-    });
+    // document.addEventListener('scroll', () => {
+    //   const isTop = window.scrollY < 100;
+    //   const scroll = Math.round(
+    //     (window.pageYOffset / window.innerHeight) * 100
+    //   );
+    //   if (isTop !== this.state.isTop && scroll > 82) {
+    //     console.log('here');
+    //     this.setState({ isTop });
+    //   }
+    // });
   }
 
   render() {

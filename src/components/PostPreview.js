@@ -3,12 +3,14 @@ import parse from 'html-react-parser';
 
 import './PostPreview.css';
 
-const PostPreview = ({ title, content }) => {
+const PostPreview = ({ id, title, content, onClick }) => {
   return (
     <div className="post-preview">
       <h1 className="preview-title">{title}</h1>
       <div className="preview-content">{renderString(content)}</div>
-      <p className="preview-link">Link to Post</p>
+      <p className="preview-link" id={id} onClick={onClick}>
+        Link to Post
+      </p>
     </div>
   );
 };

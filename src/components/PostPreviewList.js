@@ -3,7 +3,7 @@ import React from 'react';
 import './PostPreviewList.css';
 import PostPreview from './PostPreview';
 
-const PostPreviewList = ({ posts }) => {
+const PostPreviewList = ({ posts, onClick }) => {
   return (
     <div id="list-container" className="container">
       <h1 className="section-title">Recent Posts</h1>
@@ -11,8 +11,10 @@ const PostPreviewList = ({ posts }) => {
         return (
           <PostPreview
             key={post.id}
+            id={post.id}
             title={post.title}
             content={post.content}
+            onClick={onClick}
           />
         );
       })}
