@@ -15,6 +15,18 @@
   padding-top: 10%;
 }
 
+#welcome-small {
+  display: flex;
+  background-color: #0076ff;
+}
+
+#welcome-title-small {
+  font-family: 'Baskervville', serif;
+  font-size: 3em;
+  font-weight: normal;
+  color: #ffffff;
+}
+
 @media (min-width: 375px) {
   #welcome-container {
     display: grid;

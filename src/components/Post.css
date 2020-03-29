@@ -1,0 +1,14 @@
+#post-container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    'head'
+    'post';
+  justify-items: center;
+  background-color: #f7f5ea;
+}
+
+#post-head {
+  background-color: #0076ff;
+}

@@ -3,12 +3,14 @@ import React from 'react';
 import Welcome from './components/Welcome';
 import PostPreviewList from './components/PostPreviewList';
 import Footer from './components/Footer';
+import Post from './components/Post';
 
 function App() {
   return (
     <div>
       <Welcome />
       <PostPreviewList posts={tempData} />
+      {/* <Post /> */}
       <Footer />
     </div>
   );
