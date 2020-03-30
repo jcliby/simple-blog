@@ -1,4 +1,4 @@
-#Simple Blog App
+# Simple Blog App
 
 This app was build using React and React Router. This application was built as a project for Udacity's front end developer program.
 
@@ -29,5 +29,6 @@ $ npm install
 $ npm start
 ```
 
-###Note
+### Note
+
 Because this project was mainly an exercise in design and styling React-Router functionality has not been fully implemented. Navigation via URL has not been set up.
