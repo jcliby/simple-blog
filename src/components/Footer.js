@@ -12,7 +12,7 @@ const Footer = () => {
         {linkData.map((link, index) => {
           return (
             <div key={`link ${index}`} className="link-box">
-              <a href={link.url} target="_blank">
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
                 {link.name}
               </a>
             </div>

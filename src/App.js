@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams
-} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Welcome from './components/Welcome';
 import PostPreviewList from './components/PostPreviewList';
@@ -13,34 +8,39 @@ import Post from './components/Post';
 
 class App extends Component {
   state = {
-    selectedId: ''
+    posts: [],
+    id: ''
   };
 
-  handlePostClick = id => {
-    this.setState({ selectedId: id });
+  componentDidMount() {
+    this.setState({
+      posts: tempData
+    });
+  }
+
+  handleSelectId = id => {
+    this.setState({
+      id
+    });
   };
 
   render() {
-    const { selectedId } = this.state;
+    const { posts, id } = this.state;
 
     return (
-      <Router>
-        <div>
-          <Welcome />
-          <Switch>
-            <Route path="/post/:id">
-              <Post post={tempData[selectedId]} />
-            </Route>
-            <Route path="/">
-              <PostPreviewList
-                posts={tempData}
-                onClick={this.handlePostClick}
-              />
-            </Route>
-          </Switch>
-          <Footer />
-        </div>
-      </Router>
+      <div>
+        <Welcome />
+        <Switch>
+          {/* TODO: Fix to allow user to navigate via URL */}
+          <Route exact path="/post/:id">
+            <Post post={posts.find(post => post.id === id)} />
+          </Route>
+          <Route path="/">
+            <PostPreviewList posts={posts} onClick={this.handleSelectId} />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
     );
   }
 }

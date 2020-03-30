@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import parse from 'html-react-parser';
 
 import './PostPreview.css';
@@ -27,4 +27,4 @@ const renderString = text => {
   return 'No preview available.';
 };
 
-export default PostPreview;
+export default withRouter(PostPreview);
