@@ -14,7 +14,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    window.scrollTo(0, 0);
+    // TODO: Create API to pull in DATA
     this.setState({
       posts: tempData
     });
