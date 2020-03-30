@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import parse from 'html-react-parser';
 
-import './Post.css';
+import '../styles/Post.css';
 import PostImage from '../images/postImage.svg';
 
 class Post extends Component {

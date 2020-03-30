@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-import './PostPreview.css';
+import '../styles/PostPreview.css';
 
 const PostPreview = ({ id, title, content, onClick }) => {
   return (

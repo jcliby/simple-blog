@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './PostPreviewList.css';
+import '../styles/PostPreviewList.css';
 import PostPreview from './PostPreview';
 
 const PostPreviewList = ({ posts, onClick }) => {

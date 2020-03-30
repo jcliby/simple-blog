@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import PostPreviewList from './components/PostPreviewList';
 import Footer from './components/Footer';
 import Post from './components/Post';
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component {
   state = {
@@ -13,6 +14,7 @@ class App extends Component {
   };
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.setState({
       posts: tempData
     });
@@ -29,6 +31,7 @@ class App extends Component {
 
     return (
       <div>
+        <ScrollToTop />
         <Welcome />
         <Switch>
           {/* TODO: Fix to allow user to navigate via URL */}
