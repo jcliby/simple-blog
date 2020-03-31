@@ -1,6 +1,6 @@
 # Simple Blog App
 
-This app was build using React and React Router. This application was built as a project for Udacity's front end developer program.
+This app was built using React and React Router. This application was built as a project for Udacity's front end developer program.
 
 This project was an exercise in HTML and CSS styling. Used React for no reason other than wanting to continue familiarizing myself with the library.
 
